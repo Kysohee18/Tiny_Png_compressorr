@@ -116,18 +116,26 @@ if __name__ == "__main__":
     print("Pilih Model Kompresi:")
     print("1. Standard (Max 600KB) - Kualitas Tinggi")
     print("2. Lite (Max 300KB) - Ukuran Kecil")
+    print("3. Superlite (Max 100KB) - Ukuran Sangat Kecil")
+    print("4. Supersmall (50-65KB) - Ukuran Mikro")
     
     while True:
         try:
-            choice = input("Masukkan pilihan (1/2) [Default: 1]: ").strip()
+            choice = input("Masukkan pilihan (1/2/3/4) [Default: 1]: ").strip()
             if choice == '1' or choice == '':
                 limit = 600
                 break
             elif choice == '2':
                 limit = 300
                 break
+            elif choice == '3':
+                limit = 100
+                break
+            elif choice == '4':
+                limit = 65
+                break
             else:
-                print("Pilihan tidak valid. Silakan ketik 1 atau 2.")
+                print("Pilihan tidak valid. Silakan ketik 1, 2, 3 atau 4.")
         except KeyboardInterrupt:
             print("\nProgram dibatalkan.")
             sys.exit()

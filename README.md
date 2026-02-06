@@ -5,9 +5,11 @@ Aplikasi Python sederhana untuk mengompres foto secara lokal mirip dengan TinyPN
 ## Fitur
 
 *   **Offline & Lokal**: Tidak perlu upload ke internet, privasi aman.
-*   **Dua Model Kompresi**:
+*   **Empat Model Kompresi**:
     1.  **Standard (Max 600KB)**: Menjaga kualitas visual setinggi mungkin dengan batas 600KB. Cocok untuk website portfolio atau galeri berkualitas tinggi.
     2.  **Lite (Max 300KB)**: Kompresi lebih agresif untuk ukuran file yang sangat kecil. Cocok untuk thumbnail, aplikasi mobile, atau website dengan traffic tinggi.
+    3.  **Superlite (Max 100KB)**: Untuk kebutuhan upload foto dengan batasan sangat ketat. Kualitas cukup untuk preview atau thumbnail kecil.
+    4.  **Supersmall (50-65KB)**: Mode paling agresif untuk ukuran mikro. Cocok untuk icon, avatar, atau penggunaan di jaringan sangat lambat.
 *   **Resize Otomatis**: Foto yang lebarnya lebih dari 2048px akan di-resize otomatis untuk menghemat size.
 *   **Dukungan Format**: Mendukung JPG, JPEG, dan PNG (transparansi dijaga).
 *   **Struktur Folder**: Mempertahankan struktur folder asli dari folder `input_images`.
@@ -35,8 +37,10 @@ Aplikasi Python sederhana untuk mengompres foto secara lokal mirip dengan TinyPN
     python compressor.py
     ```
 3.  **Pilih Mode**: Program akan meminta anda memilih model kompresi:
-    *   Ketik `1` atau tekan Enter untuk mode **Standard (600KB)**.
-    *   Ketik `2` untuk mode **Lite (300KB)**.
+    *   Ketik `1` untuk **Standard (600KB)**.
+    *   Ketik `2` untuk **Lite (300KB)**.
+    *   Ketik `3` untuk **Superlite (100KB)**.
+    *   Ketik `4` untuk **Supersmall (65KB)**.
 4.  **Tunggu Proses**: Proses kompresi akan berjalan dengan progress bar.
 5.  **Cek Hasil**: Foto yang sudah dikompres akan muncul di folder `output_images`.
 
